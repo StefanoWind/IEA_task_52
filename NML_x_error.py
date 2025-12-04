@@ -8,13 +8,13 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 #%% Inputs
-alpha=30 #[deg] lidar half-opening angle
+alpha=15 #[deg] lidar half-opening angle
 Uhor=10 #[m/s]  #horizontal wind speed at hub height
 theta=0 #[deg] #relative wind direction 
 ShearBins=np.arange(-0.05,0.41,0.05) #shear exponents
 DeltaZBeamsBins=np.arange(-40,41,2) #[m] height differences
 DVLosBins=np.arange(-2,2.1,0.1)
-ZHH=60 #[m] hub height
+ZHH=100 #[m] hub height
 
 #%% Initialization
 S,DZ=np.meshgrid(ShearBins,DeltaZBeamsBins)
